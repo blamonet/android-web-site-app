@@ -1,0 +1,20 @@
+Android App - Web Site Wrapper
+
+This is a really simple application and an example of how you might be able to wrap your existing web site into an Android app.
+
+Required Dependencies:
+- Java
+- Android SDK
+- Ant
+
+Make sure Java, Ant, and the Android SDK are in your path so you can call adb and ant from the command line.
+
+Update the following file to have the path of your Android SDK:
+local.properties
+
+Update the url variable to the site you want to wrap in the follow java file:
+src/com/github/blamonet/AppBrowser.java
+
+To test on your phone:
+ant debug
+adb install -r bin/androidWrapperExample-debug.apk
